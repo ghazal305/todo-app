@@ -1,0 +1,147 @@
+body {
+  background-color: #4c495a;
+  font-family: "Arial", sans-serif;
+}
+
+/* styling header component */
+
+.header {
+  background-color: #5f7197;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.header:hover {
+  background-color: #5341a1;
+}
+
+/* styling taskinput component */
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  color: white;
+}
+
+.lists-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5f7197;
+  color: white;
+  border: 5px solid #495e97;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  transition: background-color 0.3s;
+}
+
+.container_tasks-complete-list,
+.container_tasks-list {
+  width: 50%;
+  margin-right: 30px;
+  background-color: #415691;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+}
+.task {
+  width: 65%;
+  word-wrap: break-word;
+  white-space: normal;
+  
+}
+.no-tasks {
+  font-style: italic;
+}
+.complete-task-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.complete-button {
+  background-color: #4caf50;
+}
+
+.delete-button {
+  background-color: #ff4d4d;
+}
+.complete-button,
+.delete-button {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+
+.delete-button:hover {
+  background-color: #ff1a1a;
+}
+
+.complete-button:hover {
+  background-color: #358437;
+}
+
+/* styling taskinput component */
+
+.task-input-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+
+.input-field {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.add-button {
+  background-color: #4caf50;
+  color: rgb(240, 229, 229);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-button:hover {
+  background-color: #328b36;
+}
+
+.remove-button {
+  background-color: #e84141;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+
+.remove-button:hover {
+  background-color: #ff1a1a;
+}
+
+.remove-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
